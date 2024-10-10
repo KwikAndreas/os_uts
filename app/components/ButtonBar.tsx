@@ -20,7 +20,6 @@ const ButtonBar = () => {
 
   return (
     <div>
-      {/* Toggle Button for Mobile */}
       <button
         onClick={toggleVisibility}
         className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg z-50 md:hidden"
@@ -28,11 +27,10 @@ const ButtonBar = () => {
         <FontAwesomeIcon icon={isVisible ? faTimes : faBars} />
       </button>
 
-      {/* ButtonBar */}
       <div
-        className={`fixed top-1/4 right-4 bg-gray-200 dark:bg-gray-500 p-4 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out ${
-          isVisible ? "translate-x-0" : "translate-x-full"
-        } md:translate-x-0 md:flex md:flex-col md:space-y-2 z-40 hidden md:block`}
+        className={`fixed top-1/4 right-4 bg-gray-200 dark:bg-gray-500 space-y-2 p-4 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out z-40 ${
+          isVisible ? "translate-x-0 flex" : "translate-x-full hidden"
+        } flex-col md:translate-x-0 md:flex md:flex-col md:space-y-2`}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
           <button
