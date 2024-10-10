@@ -2,7 +2,7 @@ const Nomor5 = () => {
   return (
     <div
       id="question-5"
-      className="p-4 my-4 bg-white dark:bg-gray-700 shadow rounded-lg"
+      className="p-6 my-4 bg-white dark:bg-gray-700 shadow rounded-lg"
     >
       <h2 className="text-lg font-semibold mb-2">5. Process State</h2>
       <p>

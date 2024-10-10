@@ -14,7 +14,7 @@ import Footers from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white  transition duration-500">
       <Navbar />
       <div className="pt-16">
         <ButtonBar />

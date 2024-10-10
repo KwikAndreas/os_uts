@@ -1,6 +1,6 @@
 const Nomor1 = () => {
   return (
-    <div id="question-1" className="p-4 my-4 bg-white dark:bg-gray-700 shadow rounded-lg">
+    <div id="question-1" className="p-6 my-4 bg-white dark:bg-gray-700 shadow rounded-lg">
       <h2 className="text-lg font-semibold mb-2">1. Cara Menangani Masalah Multitasking</h2>
       <p><strong>Time sharing</strong>: Membuat beberapa schedule</p>
       <p><strong>Scheduling</strong>: Penjadwalan urutan proses yang ingin dijalankan</p>

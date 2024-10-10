@@ -30,20 +30,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-100 dark:bg-gray-800 p-4 shadow-md fixed w-full z-10">
+    <nav className="bg-gray-100 dark:bg-gray-800 p-4 shadow-md fixed w-full z-10 transition duration-500">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-xl font-bold text-gray-900 dark:text-white">
           Ringkasan OS UTS
         </div>
-        {/* <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4">
           <button
             onClick={toggleDarkMode}
-            className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-sm"
+            className="bg-gray-300 dark:bg-gray-700 p-2 rounded-lg text-sm"
           >
             {darkMode ? "☀️" : "🌙"}
           </button>
-        </div> */}
-        <div className="flex items-center space-x-4">
           <a
             href="https://www.instagram.com/kwik_andreas_jonathan/"
             target="_blank"

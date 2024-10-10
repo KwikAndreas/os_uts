@@ -1,6 +1,6 @@
 const Nomor3 = () => {
   return (
-    <div id="question-3" className="p-4 my-4 bg-white dark:bg-gray-700 shadow rounded-lg">
+    <div id="question-3" className="p-6 my-4 bg-white dark:bg-gray-700 shadow rounded-lg">
       <h2 className="text-lg font-semibold mb-2">3. Monolitik dan Microkernel</h2>
       <h3 className="font-semibold">Monolitik</h3>
       <p><strong>Kelebihan:</strong></p>
