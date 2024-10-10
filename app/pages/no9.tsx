@@ -8,8 +8,7 @@ const Nomor9 = () => {
         9. Penjelasan FCFS (First Come First Serve)
       </h2>
       <p>
-        (Penjelasan mirip dengan nomor 8, bisa kamu jelaskan setelah memahaminya
-        lebih lanjut!)
+        
       </p>
     </div>
   );

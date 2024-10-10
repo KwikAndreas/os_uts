@@ -7,7 +7,7 @@ const Nomor8 = () => {
       <h2 className="text-lg font-semibold mb-2">
         8. Penjelasan SJF (Shortest Job First)
       </h2>
-      <p>(Kamu bisa menambahkan sendiri setelah memahami dari YouTube!)</p>
+      <p></p>
     </div>
   );
 };
