@@ -8,11 +8,16 @@ import Nomor7 from "./pages/no7";
 import Nomor8 from "./pages/no8";
 import Nomor9 from "./pages/no9";
 import Nomor10 from "./pages/no10";
+import Navbar from "./components/Navbar";
+import ButtonBar from "./components/ButtonBar";
+import Footers from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <main>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+      <Navbar />
+      <div className="pt-16">
+        <ButtonBar />
         <div className="container mx-auto p-4">
           <Nomor1 />
           <Nomor2 />
@@ -24,8 +29,9 @@ export default function Home() {
           <Nomor8 />
           <Nomor9 />
           <Nomor10 />
+          <Footers />
         </div>
-      </main>
+      </div>
     </div>
   );
 }
