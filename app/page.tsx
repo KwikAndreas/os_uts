@@ -13,16 +13,18 @@ export default function Home() {
   return (
     <div>
       <main>
-        <Nomor1 />
-        <Nomor2 />
-        <Nomor3 />
-        <Nomor4 />
-        <Nomor5 />
-        <Nomor6 />
-        <Nomor7 />
-        <Nomor8 />
-        <Nomor9 />
-        <Nomor10 />
+        <div className="container mx-auto p-4">
+          <Nomor1 />
+          <Nomor2 />
+          <Nomor3 />
+          <Nomor4 />
+          <Nomor5 />
+          <Nomor6 />
+          <Nomor7 />
+          <Nomor8 />
+          <Nomor9 />
+          <Nomor10 />
+        </div>
       </main>
     </div>
   );
