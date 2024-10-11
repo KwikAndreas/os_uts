@@ -11,6 +11,7 @@ import Nomor10 from "./pages/no10";
 import Navbar from "./components/Navbar";
 import ButtonBar from "./components/ButtonBar";
 import Footers from "./components/Footer";
+import Rumus from "./pages/Rumus";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <Nomor8 />
           <Nomor9 />
           <Nomor10 />
+          <Rumus/>
           <Footers />
         </div>
       </div>

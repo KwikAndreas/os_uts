@@ -36,10 +36,8 @@ const Nomor8 = () => {
           diselesaikan sebelum CPU bisa pindah ke proses lain.
         </li>
         <li>
-          <strong>
-            Preemptive SJF (Shortest Remaining Time First - SRTF):
-          </strong>{" "}
-          Jika sebuah proses baru datang dengan waktu eksekusi yang lebih pendek
+          <strong>Preemptive SJF (Shortest Remaining Time First):</strong> Jika
+          sebuah proses baru datang dengan waktu eksekusi yang lebih pendek
           daripada proses yang sedang dieksekusi, CPU akan menghentikan proses
           saat ini dan beralih ke proses baru yang lebih pendek.
         </li>
@@ -69,6 +67,72 @@ const Nomor8 = () => {
         <li>
           Starvation: Proses besar bisa tertunda lama jika selalu ada proses
           kecil yang datang, menyebabkan starvation atau kelaparan proses.
+        </li>
+      </ul>
+      <div className="overflow-x-auto">
+        <table className="min-w-full table-auto border-collapse border border-gray-300 dark:text-black">
+          <thead>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-300 px-4 py-2">Proses(P)</th>
+              <th className="border border-gray-300 px-4 py-2">
+                Arrival Time(AT)
+              </th>
+              <th className="border border-gray-300 px-4 py-2">
+                Burst Time (BT)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["P1", "0", "6"],
+              ["P2", "1", "7"],
+              ["P3", "2", "8"],
+              ["P4", "3", "9"],
+            ].map((row, index) => (
+              <tr key={index} className="bg-white even:bg-gray-100">
+                {row.map((cell, cellIndex) => (
+                  <td
+                    key={cellIndex}
+                    className="border border-gray-300 px-4 py-2"
+                  >
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        <strong>Perhitungan Waktu Tunggu (Waiting Time - WT): </strong>
+      </p>
+      <ul className="list-disc pl-4">
+        <li>P1: Waktu tunggu = Start time - Arrival time = 0 - 0 = 0</li>
+        <li>P2: Waktu tunggu = Start time - Arrival time = 16 - 1 = 15</li>
+        <li>P3: Waktu tunggu = Start time - Arrival time = 9 - 2 = 7</li>
+        <li>P4: Waktu tunggu = Start time - Arrival time = 6 - 3 = 3</li>
+      </ul>
+      <p>
+        <strong>Perhitungan Waktu Penyelesaian (Turnaround Time - TAT):</strong>
+        Rumus TAT = Waktu Penyelesaian - Arrival Time
+      </p>
+      <ul className="list-disc pl-4">
+        <li>P1: TAT = 6 - 0 = 6</li>
+        <li>P2: TAT = 24 - 1 = 23</li>
+        <li>P3: TAT = 16 - 2 = 14</li>
+        <li>P4: TAT = 9 - 3 = 6</li>
+        <p>Total Turnaround Time = 6 + 23 + 14 + 6 = 49</p>
+      </ul>
+      <p>
+        <strong>Rata-rata</strong>
+      </p>
+      <ul className="list-disc pl-4">
+        <li>
+          Rata-rata Waktu Tunggu = Total waktu tunggu / Jumlah proses = 25 / 4 =
+          6,25
+        </li>
+        <li>
+          Rata-rata Turnaround Time = Total TAT / Jumlah proses = 49 / 4 = 12,25
         </li>
       </ul>
       <p>
