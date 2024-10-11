@@ -153,6 +153,19 @@ const Nomor8 = () => {
           dijalankan jika terus-menerus kalah dengan proses kecil.
         </li>
       </ul>
+      <p>
+        <strong>Konklusi Rumus: </strong>
+      </p>
+      <ul className="list-disc pl-4">
+        <li>
+          WT(Waiting Time) Shortest Job First & Round Robin = COMPLETION TIME -
+          ARRIVAL TIME - BURST TIME
+        </li>
+        <li>
+          WT(Waiting Time) FCFS(First Come First Serve) = START TIME - ARRIVAL
+          TIME
+        </li>
+      </ul>
     </div>
   );
 };
