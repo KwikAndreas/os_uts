@@ -1,10 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -57,6 +55,14 @@ const Navbar = () => {
             className="text-blue-500 dark:text-blue-400"
           >
             <FontAwesomeIcon icon={faGithub} size="lg" />
+          </a>
+          <a
+            href="https://kwikandreas.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 dark:text-blue-400"
+          >
+            <FontAwesomeIcon icon={faGlobe} size="lg" />
           </a>
         </div>
       </div>
